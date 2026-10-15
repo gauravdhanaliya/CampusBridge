@@ -30,3 +30,27 @@
     @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
   }
 }
+
+/* Building names on the map */
+.leaflet-tooltip.building-label {
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
+  box-shadow: none;
+  color: #0b4a3f;
+  font: 600 11px 'Work Sans', system-ui, sans-serif;
+  padding: 1px 6px;
+}
+.leaflet-tooltip.building-label::before {
+  display: none;
+}
+.campus-boundary-label {
+  background: #fff;
+  border: 2px dashed #0b4a3f;
+  border-radius: 999px;
+  color: #0b4a3f;
+  font: 700 12px 'Work Sans', system-ui, sans-serif;
+  padding: 3px 10px;
+  white-space: nowrap;
+  width: max-content;
+  transform: translate(-50%, -50%);
+}
